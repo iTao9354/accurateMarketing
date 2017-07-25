@@ -2,12 +2,12 @@
 * @Author: 靳海月
 * @Date:   2017-02-25 09:50:28
 * @Last Modified by:   jinhaiyue
-* @Last Modified time: 2017-07-25 11:45:18
+* @Last Modified time: 2017-07-25 14:01:45
 */
 
 'use strict';
 $(function(){
-	alert(1);
+	alert(111111);
 	//初始化修改图标的zTree树状结构---带右键菜单
 	identityTree();
 
