@@ -1,0 +1,100 @@
+.content {
+    margin: 10px;
+}
+.part {
+    padding: 10px 20px;
+    clear: both;
+    overflow: hidden;
+}
+.basicInfo {
+	padding-bottom: 0;
+}
+.part > h2 {
+    border-bottom: 1px solid #fc7f01;
+}
+.part h2>span {
+    font-size: 16px;
+    background-color: #fc7f01;
+    color: #fff;
+    padding: 5px 8px;
+    display: inline-block;
+    margin-bottom: -10px;
+}
+.infos, .marketingSkill,.valuePromotion>.discribeTxt {
+    margin-top: 20px;
+}
+.marketingSkill,
+.discribeTxt,
+.evIndicator {
+	padding-left: 2em;
+}
+.attrName {
+    font-weight: bold;
+}
+.infos >p {
+    width: 31%;
+    display: inline-block;
+    float: left;
+    padding-left: 2em;
+}
+.infos >.oneLine {
+    float: none;
+    clear: both;
+    width: 100%;
+}
+.linksType > i,.linksType > span {
+    padding: 3px 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    line-height: 30px;
+    border-radius: 3px;
+}
+.linksType > i.active,.linksType > span.active,.linksType > i:hover,.linksType > span:hover{
+	color:#fc7f01;
+	border: 1px solid #fc7f01;
+}
+.marketingRangeVal, .marketingSkillVal,.evIndicatorVal {
+    display: inline-block;
+}
+.red{
+	color:#f00;
+	font-weight: bold;
+}
+.col-md-4,.col-md-6{
+    padding: 0;
+}
+.oneChartWrap{
+	border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 3.5%;
+    padding: 10px;
+}
+.twoChartWrap {
+	margin-right: 2.33%;
+}
+.chartWrap{
+	width: 100%;
+	margin-top: 10px;
+}
+.contactTendWrap h3,.userTraceWarp h3,.userTraceWarp p {
+    display: inline-block;
+}
+.userTraceWarp >p {
+    padding-left: 25px;
+    margin: 5px 0;
+}
+.contactTendWrap .input-sm{
+    width: 105px;
+    line-height: 30px;
+}
+.discribeTxt>p {
+    text-indent: 26px;
+}
+.Wdate {
+    background-color: #fff !important;
+    border: #ccc 1px solid !important;
+}
+.select_box ul {
+	top: 21px;
+}

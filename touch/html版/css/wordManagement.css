@@ -1,0 +1,118 @@
+@CHARSET "UTF-8";
+/* 弹出框 */
+body, html {
+	height: 100%;
+}
+
+.iframe-panels {
+	height: 100%;
+}
+
+.input-wrapper {
+	padding: 25px 0;
+}
+
+.searchWrap {
+	margin-bottom: 0;
+}
+
+.part-content {
+	padding-top: 0;
+}
+
+.dataTables_wrapper .dataTable thead>tr>th:first-child,
+	.dataTables_wrapper .dataTable tbody>tr>td:first-child {
+	text-align: center;
+	padding-left: 0;
+}
+
+td .iconfont {
+	font-size: 17px;
+	cursor: pointer;
+}
+td .b-delete {
+	margin-left: 20px;
+}
+
+.cChoose {
+	width: 200px;
+	height: 26px;
+	border: 1px solid #CCCCCC;
+	border-radius: 1px;
+}
+.form_table {
+    width: 100%;
+}
+.J_Form {
+	padding:;
+}
+
+.J_Form .form_table tr>td {
+	padding: 4px 0;
+}
+
+.J_Form .form_table tr .tleft {
+	width: 120px;
+	text-align: right;
+}
+.form-group {
+	margin-right: 5px;
+}
+.form-group .radio {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+/* 表单 */
+.form-group .inp-search {
+	width: 186px;
+}
+.select_box .b-allOptions {
+	top: 23px;
+}
+
+.layer-form {
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #ccc;
+    padding: 4px 6px;
+	border-radius: 1px;
+	font-size: 14px;
+	outline: none;
+	width: 200px;
+}
+
+.cz{
+	height:720px;
+    padding: 15px;
+}
+
+.layer-form:focus {
+	border-color: #ff9600;
+}
+
+label {
+	margin-bottom: 0;
+	height: 100%;
+	vertical-align: top;
+	padding-top: 2px;
+}
+
+.input-xs {
+	width: 100px;
+	height: 28px;
+}
+
+.input-md {
+	width: 305px;
+	height: 28px;
+}
+
+.input-lg {
+	width: 305px;
+	min-height: 60px;
+	height: auto;
+}
+
+.n-msg {
+	display: block;
+}

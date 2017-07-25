@@ -1,0 +1,111 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%   String webpath = request.getContextPath();%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    	<form action="" class="touch-form" id="JForm" data-validator-option="{theme:'yellow_right_effect',stopOnError:true}">
+    		<!-- <input type="hidden" id="cusMgrRecId" name="recId" /> -->
+			<input type="hidden" id="groupId" name="groupId" value="111" />
+			<h2>
+				<p>
+					<i class="formTitleIcon"></i>客户经理
+				</p>
+			</h2>
+			<div class="userCount">
+				<p>
+					<span class="countTxt">当前目标用户数：</span>
+				</p>
+				<span class="countData" id="userCount"></span> 
+				<i class="iconfont cRefresh" id="userRefresh">&#xe63d;</i>
+			</div>
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th>筛选数据：</th>
+						<td class="filter-td">
+							<input type="hidden" name="isFilter" class="hidden-inp">
+							<div id="filterRadio"></div>
+							<div class="filterContent form-group secondLayer" id="filterContent">
+								<div>
+									<span>筛选数据条件：</span>
+									<textarea id="chooseCdt" name="filterCondition" class="form-control" readonly="readonly"></textarea>
+									<input type="hidden" id="filterConditionSql" name="filterConditionSql" />
+									<input type="hidden" id="groupSql" name="groupSql" />
+									<a href="javascript:modules.toshift.setFilterCdt(2, null, 'cusMgr', modules.toshift.secFilter);" class="text-ab">选择条件</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th><i class="cSign">*</i>营销话术：</th>
+						<td class="clearfix wordsWrapper">
+							<input type="hidden" class="words-input" id="wordsInp" data-rule="required;length(1~50);">
+							<!-- <textarea name="" id="wordsContentArea" cols="30" rows="10"></textarea> -->
+							<div contenteditable="true" data-rule="required;length(0~100)" id="wordsContent"
+						name="marketingWords" class="fl form-control"></div>
+							<div class="fl wordsVariableWrap">
+								<div class="wordsVariable">
+									<span>话术变量：</span>
+									<div class="variables" id="wordsVariable">
+										<!-- <p>
+											<span>话术变量</span>
+										</p> -->
+									</div>
+								</div>								
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<th class="rule-label"><i class="cSign">*</i>工单下发规则：</th>
+						<td class="common-content">
+							<div class="rulesWrap clearfix">
+								<ul class="fl rules-list" id="ruleWrapper">
+									<!-- <li>
+										<div></div>
+										按照
+										<div></div>
+										<i class="fl addCdt" id="addWorkOrderRule"></i>
+									</li> -->
+								</ul>
+								<i class="fl addCdt" id="addWorkOrderRule"></i>
+							</div>
+						</td>
+					</tr>
+					<tr class="co-touch">
+						<td colspan="2">
+							<h2>触点协同设置</h2>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel"><i class="cSign">*</i>工单有效期设置：</th>
+						<td>
+							<input type="text" id="orderInvalidDate" name="orderInvalidDate" class="form-control form-sm" /> 
+							<span>天</span>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel">接触频次定义：</th>
+						<td>
+							<input type="text" id="touchLimitDay"	name="times" class="form-control form-sm" /> 天接触一次
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="buttonDiv clearfix">
+				<button type="button" class="b-grayBtn btn-i" id="backBtn">返回</button>
+				<button type="button" class="b-redBtn btn-i" onclick="touchObj.cusMgr.confirmTouch();">确认</button>
+			</div>
+    	</form>
+
+
+    	<script src="endpoints/js/cusMgr.js"></script>
+    </body>
+ 
+</html>

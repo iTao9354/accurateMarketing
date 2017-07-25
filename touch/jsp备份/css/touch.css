@@ -1,0 +1,653 @@
+@CHARSET "UTF-8";
+html,
+body {
+    background-color: #fff;
+}
+input, .form-control {
+    height: 27px;
+    line-height: 27px;
+    font-size: 13px;
+    padding: 0 5px;
+}
+.form-control {
+    outline: none;
+}
+.form-control:focus {
+    border: 1px solid #ff9600;
+}
+textarea {
+    resize: none;
+}
+textarea.form-control {
+    padding: 6px 12px;
+}
+.select_box span {
+    background-color: #fff;
+}
+.select_box ul {
+    width: 200px;
+    top: 29px;
+}
+.select_box ul.turnUp {
+    bottom: 29px;
+    width: 200px;
+}
+.checkbox{
+    position: absolute;
+    right: 10px;
+    bottom:2px;
+    display: none;
+    width: 30px;
+    height: 30px;
+    background:url("../images/checkbox.png") no-repeat center center;
+    
+}
+.available .checkbox {
+    display: block;
+}
+ .checkbox.active {
+    position: absolute;
+    right: 10px;
+    background:url("../images/Iconchecked.png") no-repeat center center;
+    
+}
+
+.content-wrapper > h1 {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    border-left: 5px solid #fc7f01;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.content-wrapper {
+    background-color: #fff;
+    text-align: center;
+}
+
+.touchLinkWrap {
+    width: 983px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.touchLink {
+    height: 152px;
+    color: #fff;
+    background-color: #d3d3d3;
+    float: left;
+    margin: 30px 22px 0 22px;
+    position: relative;
+    cursor: not-allowed;
+}
+.touchLink.available {
+    background-color: #FACD89;
+    cursor: pointer;
+}
+.touchLink.available.active{
+    background-color: #fc8e39;
+}
+.width1 {
+    width: 152px;
+}
+.width2 {
+    width: 349px;
+}
+.touch-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -23px;
+}
+.available .touch-icon {
+    left: 5%;
+    top: 8%;
+    margin-left: 0;
+    margin-top: 0;
+}
+.user-count {
+    display: none;
+}
+.building {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    margin: 0 auto;
+}
+.available .user-count {
+    display: block;
+}
+.available .building {
+    display: none;
+}
+
+
+.ptitle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.touch-title {
+    position: relative;
+    font-size: 18px;
+    top: 18px;
+}
+.available .touch-title{
+    font-size: 16px;
+    top: 10px;
+    left: -91px;
+}
+.available.width1 .touch-title{
+    left:3px;
+}
+
+.available .ptitle p{
+    font-size: 18px;
+    margin-top: 39px;
+    top: 0px;
+}
+.available.width1 .ptitle p {
+    margin-top: 46px;
+}
+.available .ptitle p>span{
+    text-align: center;
+    font-size: 30px;
+    top: 0px;
+    left: 0px;
+}
+.available .user-count i{
+    font-size: 16px;
+    padding-left: 5px;
+    font-style: normal; 
+    position: relative;
+    top: -4px;   
+}
+.available.width2 .user-count i {
+    top: -11px;
+}
+.available .user-count .count {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.available.width1 .user-count .count {
+    max-width: 95px;
+    font-size: 16px;
+}
+.available.width2 .user-count .count {
+    max-width: 260px;
+}
+
+
+/* 底部按钮 */
+.prenext-btn{
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: right;  
+    border-top: 0px solid #CCCCCC !important;
+}
+.prenext-btn a {
+    display: inline-block;
+    height: 30px;
+    margin: 3px 5px 15px 0px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #FC7F01;
+    padding:0 16px;
+    border-radius: 2px;
+}
+.noElement{
+    display:none;
+}
+.prenext-btn a:hover,.prenext-btn a:focus,.prenext-btn a:active {
+     background-color: #fb9937;
+}
+
+
+
+/* 二级页面 */
+.touch-form {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formTitleIcon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 12px;
+    background: transparent url(../images/cusMgrOrg.png) no-repeat;
+}
+
+.touch-form > h2 > p {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+}
+
+.touch-form > h2 > p > i {
+    position: relative;
+    top: 2px;
+}
+
+.touch-form > h2:before,
+.touch-form > h2:after {
+    width: 58px;
+    height: 2px;
+    background-color: #fc7f01;
+    margin: 0 8px;
+    content: "";
+    position: relative;
+    display: inline-block;
+    top: -3px;
+}
+
+.countTxt {
+    line-height: 36px;
+    margin-left: 20px;
+    padding-left: 17px;
+    background-color: #fc7f01;
+    color: #fff;
+    display: inline-block;
+}
+
+.countData {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 9px 15px;
+    float: left;
+    height: 100%;
+}
+
+.cRefresh{
+    background-color: #f0f0f0;
+    float: left;
+    color: #fc7f01; 
+    cursor: pointer;
+    margin-top: 0;
+    line-height: 36px;
+    padding-right: 10px;
+    height: 35px;
+}
+.userCount {
+    clear: both;
+    text-align: left;
+    margin: 20px 0 10px;
+    overflow: hidden;
+    height: 35px;
+}
+
+.userCount p {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    float:left;
+    height: 35px;
+}
+
+.userCount p:after {
+    border-bottom: 18px solid transparent;
+    border-left: 13px solid #fc7f01;
+    border-top: 18px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #f0f0f0;
+    top: 0;
+    right: 0;
+}
+
+.content-table {
+    width: 100%;
+}
+.content-table tbody > tr > th {
+    width: 130px;
+    text-align: right;
+    vertical-align: top;
+    padding: 4px 0;
+}
+.content-table tbody > tr > th.plabel {
+    vertical-align: middle;
+}
+.content-table tbody > tr > td {
+    padding: 4px 0;
+    text-align: left;
+}
+.filter-td {
+    position: relative;
+}
+.filterContent > div > * {
+    float: left;
+}
+
+.filterContent > div > a:hover {
+    text-decoration: underline;
+}
+
+.filterContent > div {
+    overflow: hidden;
+}
+.content-table tbody > tr > td.common-content {
+    padding-bottom: 10px;
+}
+
+.secondLayer {
+    border: 1px solid #ffdcba;
+    border-bottom-width: 2px;
+    width: 70%;
+    position: relative;
+    top: 10px;
+    left: -92px;
+    display: none;
+    padding: 13px 13px;
+    margin-bottom: 10px;
+}
+
+.secondLayer:before {
+    content: "";
+    border-left: 9px solid transparent;
+    border-bottom: 9px solid #ffdcba;
+    border-right: 9px solid transparent;
+    position: absolute;
+    top: -9px;
+    left: 89px;
+}
+.secondLayer .form-control {
+    width: 60%;
+    margin-right: 20px;
+    margin-left: 5px;
+    background-color: #eee;
+}
+
+.words-input {
+    display: block;
+    width: 42%;
+}
+.wordsWrapper .form-control {
+    float: left;
+    width: 42%;
+    height: 122px;
+    border-right: none;
+    text-align: left;
+    padding: 13px 1%;
+}
+.wordsWrapper .form-control > span {
+    margin: 0 3px 3px 0;
+    display: inline-block;
+}
+.wordsWrapper .form-control span > i {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 28px;
+    width: 26px;
+    height: 26px;
+    color: #fff;
+    vertical-align: top;
+    background-color: #FC7F01;
+    text-align: center;
+}
+.wordsWrapper .form-control span > span {
+    line-height: 26px;
+    background-color: #FFC284;
+    color: #fff;
+    padding: 0px 3px 0px 2px;
+    display: inline-block;
+}
+.wordsVariableWrap {
+    float: left;
+    width: 55%;
+    border: 1px solid #c6def6;
+    background-color: #e8edf5;
+    min-height: 148px;
+}
+.wordsVariable {
+    padding: 13px;
+}
+.wordsVariable > span {
+    height: 25px;
+    color: #5c92cf;
+    display: block;
+    padding-left: 2px;
+    text-align: left;
+}
+.variables {
+    text-align: left;
+}
+.variables span {
+    background: transparent url(../images/variableBk.png) repeat-x;
+    height: 25px;
+    line-height: 25px;
+    color: #222;
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    float:left;
+}
+
+.variables > p {
+    margin: 4px 2px;
+    display: inline-block;
+    height: 25px;
+    cursor: pointer;
+}
+
+.variables > p:before,
+.variables > p:after {
+    background: transparent url(../images/variable-left.png) no-repeat;
+    width: 11px;
+    height: 25px;
+    position: relative;
+    content: "";
+    display: inline-block;
+    float:left;
+}
+.variables > p:after {
+    background: transparent url(../images/variable-right.png) no-repeat;
+}
+
+.content-table tbody > tr > th.rule-label {
+    padding-top: 18px;
+}
+.rulesWrap {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.rules-list {
+    padding: 5px 0;
+}
+.rules {
+    padding: 3px 20px;
+    height: 35px;
+    line-height: 35px;
+}
+.rule-select {
+    margin-top: 2px;
+}
+.rules > span {
+    margin: 2px 10px 0;
+    line-height: 29px;
+}
+.rule-opt {
+    width: 30px;
+    margin-left: 20px;
+}
+.delIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: transparent url(../images/del.png) no-repeat center center;
+    cursor:pointer;
+}
+.addCdt{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: transparent url(../images/subdivideIcons.png) no-repeat top left;
+    background-position: -245px 4px;
+    position: relative;
+    top: 6px;
+} 
+
+.co-touch > td {
+    border-top: 1px solid #d9d9d9;
+}
+.co-touch h2 {    
+    background: transparent url(../images/advanceBk.png) no-repeat center left;
+    line-height: 48px;
+    padding-left: 22px;
+    margin-left: 22px;
+}
+.form-sm {
+    width: 40px;
+    border: 1px solid transparent;
+    border-bottom-color: #ccc;
+}
+.form-sm:focus {
+    border-color: transparent;
+    border-bottom-color: #ff9600;
+}
+.input-sm {
+    width: 40px;
+}
+
+.buttonDiv{
+    max-width: 1160px;
+    width: 100%;
+    overflow:hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.buttonDiv .btn-i {
+    float: right;
+    margin:0 5px;
+    cursor: pointer;
+}
+
+/* 本地短信触点 */
+.linkIpt {
+    width: 350px;
+    margin-right: 10px;
+}
+.form-readonly {
+    background-color: #eee;
+}
+.form-readonly:focus {
+    border-color: #ccc;
+}
+a.text-a {
+    text-decoration: underline;
+    color: #fb9937;
+    margin-left: 20px;
+}
+.thirdFilterContent{
+    width:100%;
+}
+.thirdFilterContent .form-sm {
+    margin-bottom: 10px;
+}
+a.text-ab {
+    text-decoration: underline;
+    color: #fb9937;
+}
+.dataTables_wrapper .dataTable thead > tr > th,
+.dataTables_wrapper .dataTable tbody > tr > td {
+    text-align: center;
+    border: 1px solid #e5e5e5;
+}
+.thirdFilterContent .dataTables_wrapper .dataTable thead > tr > th {
+    padding: 0;
+}
+.thirdFilterContent .dataTables_wrapper .dataTable tbody > tr > td {
+    padding: 5px 0;
+}
+.dataTables_wrapper .dataTable tbody > tr:nth-child(odd),
+.dataTables_wrapper .dataTable tbody > tr:nth-child(odd):hover,
+.dataTables_wrapper .dataTable tbody > tr:hover {
+    background-color: #fff;
+}
+.dataTables_wrapper .dataTable tbody tr td.show-content {
+    overflow: visible;
+}
+.show-content .select_box {
+    margin: 0 auto;
+}
+.inTable-delBtn {
+    font-size: 15px;
+    cursor:pointer;
+}
+.layui-layer-title {
+    text-align: left;
+}
+#smsGatewayCode span {
+    width: 357px;
+}
+#smsGatewayCode ul {
+    width: 360px;
+}
+.times-setting {
+    line-height: 35px;
+}
+.contact-times .form-sm {
+    background-color: transparent;
+}
+.times-setting .rule-select {
+    display: inline-block;
+}
+.times-setting .select_box {
+    width: 50px;
+}
+.times-setting .select_box span {
+    width: 42px;
+    padding-left: 5px;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: #ccc;
+    background-image: none;
+    cursor: default;
+}
+.times-setting .select_box ul {
+    width: 47px;
+}
+.times-setting .select_box ul li a {
+    height: 22px;
+    line-height: 22px;
+}
+
+/* 本地弹窗 */
+.checkbox-wrapper{
+/*     height: 30px; */
+    line-height: 30px;
+    display: inline-block;
+}
+.checkbox-wrapper a{
+    padding-right: 17px;
+}
+.checkbox-wrapper  .check-img{
+    margin-right: -2px;
+}
+.textarea-wrap .form-control {
+    width: 35%;
+    height: 66px;
+}
+.endTime-wrap {
+    width: 60%;
+    text-align: left;
+}
+.double-div .Wdate{
+    height: 27px;
+    background-color: #fff;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+.winInp-wrap .form-control {
+    width: 250px;
+}
+.words-context {
+    line-height: 20px;
+    text-align: left;
+}

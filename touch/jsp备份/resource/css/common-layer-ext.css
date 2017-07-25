@@ -1,0 +1,82 @@
+/*
+* @Author: Administrator
+* @Date:   2017-02-25 11:34:11
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-02-27 14:36:05
+*/
+@CHARSET "UTF-8";
+body .layui-layer {
+    box-shadow: 5px -5px 5px rgba(0,0,0,.2);
+}
+body .layui-layer-loading{
+	box-shadow:none;
+}
+.layui-layer-ext .layui-layer-title {
+    background: #fff;
+	color: #fc7f01;
+    border: none;
+    padding: 0 80px 0 10px;
+    border-bottom: 1px solid #fd952c;
+    height: 38px;
+    line-height: 38px;
+}
+
+.layui-layer-ext > .layui-layer-setwin{
+	top:12px;
+}
+
+.layui-layer-ext .layui-layer-btn a {
+	background: #fc7f01;
+    color: #fff;
+	border:none;
+}
+.layui-layer-ext .layui-layer-btn a.layui-layer-btn0:hover, 
+.layui-layer-ext .layui-layer-btn a.layui-layer-btn0:focus,
+.layui-layer-ext .layui-layer-btn a.layui-layer-btn0:active {
+    background: #fb9937;
+}
+.layui-layer-ext .layui-layer-btn .layui-layer-btn1 {
+    height: 28px;
+    line-height: 28px;
+    margin: 0 6px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 2px;
+    font-weight: 400;
+    color: #3e3e3e;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+}
+.layui-layer-ext .layui-layer-btn a.layui-layer-btn1:hover, 
+.layui-layer-ext .layui-layer-btn a.layui-layer-btn1:focus,
+.layui-layer-ext .layui-layer-btn a.layui-layer-btn1:active {
+    background: #ccc;
+    color: #fff;
+}
+.layui-layer-ext .layui-layer-setwin .layui-layer-close1{
+	background-position:1px -40px;
+}
+.layui-layer-ext .layui-layer-setwin .layui-layer-close2 {
+	right: -24px;
+}
+.layui-layer-title >i.iconfont {
+/*     color: #fc7f01;
+ */      display: none!important;
+ }
+ .layui-layer-btn{text-align: center!important;}
+ .layui-layer-setwin .layui-layer-ico {
+ 	background: url(../images/iconMin.png) no-repeat;
+ }
+ .layui-layer-dialog .layui-layer-content .layui-layer-ico3 {
+ 	background-position: 0 0;
+ }
+ 
+ .layui-layer .layui-layer-content .layui-layer-close{
+ 	background-position: 3px -40px;
+ }
+.layui-layer-load{
+	background:url(../images/loading-2.gif) center center no-repeat #fff !important;
+}

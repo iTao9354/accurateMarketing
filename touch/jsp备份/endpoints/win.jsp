@@ -1,0 +1,131 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%   String webpath = request.getContextPath();%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+ <body>
+    	<form action="" class="touch-form" id="JForm">
+    		<!-- <input type="hidden" id="cusMgrRecId" name="recId" /> -->
+			<input type="hidden" id="groupId" name="groupId" value="333" />
+			<h2>
+				<p>
+					<i class="formTitleIcon"></i>本地弹窗
+				</p>
+			</h2>
+			<div class="userCount">
+				<p>
+					<span class="countTxt">当前目标用户数：</span>
+				</p>
+				<span class="countData" id="userCount"></span> 
+				<i class="iconfont cRefresh" id="userRefresh">&#xe63d;</i>
+			</div>
+			<table class="content-table">
+				<tbody>
+					<tr>
+						<th>筛选数据：</th>
+						<td class="filter-td">
+							<input type="hidden" name="isFilter" class="hidden-inp">
+							<div id="filterRadio"></div>
+							<div class="filterContent form-group secondLayer" id="filterContent">
+								<div>
+									<span>筛选数据条件：</span>
+									<textarea id="chooseCdt" name="filterCondition" class="form-control" readonly="readonly"></textarea>
+									<input type="hidden" id="filterConditionSql" name="filterConditionSql" />
+									<input type="hidden" id="groupSql" name="groupSql" />
+									<a href="javascript:modules.toshift.setFilterCdt(2, null, 'win', modules.toshift.secFilter);" class="text-ab">选择条件</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel"><i class="cSign">*</i> 服务渠道：</th>
+						<td>
+							<span class="checkbox-wrapper" id="serveChannelChk"></span>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel">用户状态：</th>
+						<td class="textarea-wrap">
+							<textarea id="userDescription" data-rule="length(0~100)" class="form-control" name="userDescription"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel"><i class="cSign">*</i> 营销目标：</th>
+						<td class="textarea-wrap">
+							<textarea id="sellTarget" name="sellTarget" class="form-control" data-rule="required;length(0~100)"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th><i class="cSign">*</i> 营销话术：</th>
+						<td class="clearfix wordsWrapper">
+							<input type="hidden" id="wordsInp" data-rule="required;length(1~50);">
+							<div contenteditable="true" data-rule="required;length(0~100)" id="wordsContent"
+						name="marketingWords" class="fl form-control"></div>
+							<div class="fl wordsVariableWrap">
+								<div class="wordsVariable">
+									<span>话术变量：</span>
+									<div class="variables" id="wordsVariable">
+										<!-- <p>
+											<span onclick="insertWordsVariable(this,'cm')">话术变量</span>
+										</p> -->
+									</div>
+								</div>								
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel"><i class="cSign">*</i> 生效时间：</th>
+						<td class="double-div">
+							<input type="text" id="startTime" name="startTime" readonly="readonly" data-rule="required;length(0~30)" class="form-control Wdate" onfocus="WdatePicker({minDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'endTime\')||\'2020-10-01\'}'})"/>
+							<div class="fr endTime-wrap">
+								<i class="cSign">*</i> 失效时间：
+								<input id="endTime" name="endTime" readonly="readonly" class="form-control Wdate" type="text" data-rule="required;length(0~30)" onfocus="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')||\'new Date()\'}',maxDate:'2020-10-01'})"/>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel"><i class="cSign">*</i> 优先级：</th>
+						<td class="winInp-wrap">
+							<input type="text" id="sendLevel" placeholder="0~99 数字越小优先级别越高" name="sendLevel" class="form-control"/>
+						</td>
+					</tr>
+					<tr class="co-touch">
+						<td colspan="2">
+							<h2>触点协同设置</h2>
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel"><i class="cSign">*</i> 工单有效期设置：</th>
+						<td>
+							<input type="text" id="orderInvalidDate" name="orderInvalidDate" class="form-control form-sm" /> 天
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel"><i class="cSign">*</i> 日弹窗次数设置：</th>
+						<td>
+							<input type="text" id="dayWinLimit" name="dayWinLimit" class="form-control form-sm" /> 次每天
+						</td>
+					</tr>
+					<tr>
+						<th class="plabel">接触频次定义：</th>
+						<td>
+							<input type="text" id="touchLimitDay" name="times" class="form-control form-sm" /> 天接触一次
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="buttonDiv clearfix">
+				<button type="button" class="b-grayBtn btn-i" id="backBtn">返回</button>
+				<button type="button" class="b-redBtn btn-i" onclick="touchObj.win.confirmTouch();">确认</button>
+			</div>
+    	</form>
+
+
+    	<script src="endpoints/js/window.js"></script>
+    </body>
+</html>

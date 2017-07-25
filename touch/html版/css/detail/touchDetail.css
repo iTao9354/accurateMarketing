@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+*{
+	font-size: 13px;
+    font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, Tahoma, Arial, sans-serif;
+	margin: 0;
+    padding: 0;
+}
+input,select,textarea{
+	outline: none;
+}
+input{
+	width: 257px;
+	height: 27px;
+	padding: 3px;
+	border-radius: 1px;
+    border: 1px solid #CCCCCC;
+}
+li,
+dt,
+dd {
+    list-style: none;
+}
+/* .noElement { */
+/*     display: none !important; */
+/* } */
+i{
+	display: inline-block;
+}
+
+.plan-complete h4{
+	    background-color: #F7F8FD;
+    font-size: 14px;
+    /* text-align: center; */
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    position: relative;
+}
+.plan-complete h4>span{
+	display: inline-block;
+    line-height: 35px;
+    height: 35px;
+    width: 192px;
+    background:url(../../images/detail/bg-arrow.png) no-repeat center center;
+}
+.plan-complete h4 span i.icon{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px 3px 14px;
+    vertical-align: middle;
+}
+.double-span{
+	    width: 260px;
+    display: inline-block;
+}
+i.icons-skill{
+	background: url(../../images/detail/icons-skill.png) no-repeat center center;
+}
+.plan-complete .divBody>div ul{
+	padding: 15px 0px;
+	margin-left: 28px;
+    border-left: 1px solid #ccc;
+}
+.plan-complete>div{
+	width: auto;
+/* 	padding: 15px 10%; */
+}
+.plan-complete ul > li{
+	line-height: 30px;
+}
+.plan-complete ul li>span.p-title{
+	display: block;
+    float: left;
+	width: 189px;
+	text-align: right;
+    font-weight: 600;
+}
+.p-text {
+	display: inline-block;
+	width: 30%;
+}
+
+.p-channel-contact .imgs{
+	display: inline-block;
+	width: 24px;
+	height:24px;
+   vertical-align:top;
+}
+.p-channel-contact .localWindow {
+    background: url(../../images/detail/localWindow.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.p-channel-contact .manager{
+	background:url(../../images/detail/manager.png) no-repeat center center;
+	background-size:100% 100%;
+}
+.p-channel-contact .message{
+	background:url(../../images/detail/message.png) no-repeat center center;
+	background-size:100% 100%;
+}
+.p-channel-contact h5{
+	margin: 0 0 15px 5px;
+}
+.p-channel-contact h5 span{
+	margin-top: 6px;
+    font-size: 14px;
+    color: #FC7F01;
+    line-height: 15px;
+    display: inline-block;
+    padding-left: 4px;
+}
+
+.double-li{
+	display: inline-block;
+}
